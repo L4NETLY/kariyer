@@ -8,7 +8,8 @@
  */
 
 ## Kariyer.net Domain URL ##
-$site = file_get_contents('http://www.kariyer.net/mysilo-tahil-depolama-sistemleri-a-s-is-ilanlari-c2007-p11055/');
+## Your kariyer.net URL ##
+$site = file_get_contents('URL');
 
 ## Bring advertisements from URL ##
 preg_match_all('@<tr id="trIlanno">(.*?)</tr>@si', $site, $job);
